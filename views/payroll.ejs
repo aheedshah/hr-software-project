@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home - <%=theName%></title>
+        <meta charset="utf-8">
+        <!-- Linking stylesheets -->
+        <link rel="stylesheet" href="home.css" />
+        <!-- Linking  Javascript -->
+        <script src="home.js" defer></script>
+        <script src="clock.js" defer></script>
+    </head>
+    <body>
+        <!-- Nav bar code starts -->
+        <nav class="navbar">
+            <!-- Our brand title -->
+            <div class="brand-title"><%=theName%></div>
+            <!-- Making the hamburger for the nav bar -->
+            <a href="#" class = "toggle-button">
+                <span class = "bar"></span>
+                <span class = "bar"></span>
+                <span class = "bar"></span>
+            </a>
+            <!-- The links of our nav bar  -->
+            <div class = "navbar-links">
+                <ul>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="userInformation">User Information</a></li>
+                    <li><a href="documents">Documents</a></li>
+                    <li><a href="timeOff">Time-Off</a></li>
+                    <li><a href="payroll">Payroll</a></li>
+                    <li> <a href="logout">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h2>Latest Payroll Information: </h2>
+        <h3>Pay Date: <%=employeeDetails[0].lastPay%></h3>
+        <h3>Amount: £2000</h3>
+
+        <h2>View your previous Payrolls:</h2>
+        <h3>February 2022: <a href = "payslip_template.png">Click to view</a></h3>
+        <h3>January 2022: <a href = "payslip_template.png">Click to view</a></h3>
+        
+    </body>
+    
+</html>
